@@ -7,9 +7,7 @@ module.exports = async (client) => {
   if (client.config.Slash.global) {
  await client.registerInteractions();
   } else if (client.config.Slash.test)
-await client.registerInteractions(client.config.Slash.GUILD_ID);
- }
-  
+await client.registerInteractions(client.config.Slash.GUILD_ID);  
 };
 
 const updatePresence = (client) => {
